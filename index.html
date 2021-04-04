@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WhatsApp Web Clone</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/bf7e05c402.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="toolbar-container">
+        <img class="user-photo" src="https://github.com/joaomarcosfurtado.png" alt="João Marcos">
+        <div class="auxicons-toobal-container">
+          <i class="fas fa-spinner"></i>
+          <i class="fas fa-comment-alt"></i>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </div>
+
+      <div class="notification-container">
+        <i class="fas fa-bell-slash"></i>
+        <p class="receive-notification">Get notified of new messages</p>
+        <p class="activate-notification"> 
+          Turn on desktop notifications
+          <i class="fas fa-angle-right"></i>
+        </p>
+      </div>
+      
+      <div class="search-container">
+        <i id="contact-search" class="fas fa-search"></i>
+        <input 
+          type="text" 
+          name="search" 
+          id="search" 
+          placeholder="Search or start new chat"
+        >
+      </div>
+
+      <div class="contacts-container">
+        
+        <div class="contact-box active-chat">
+          <img class="user-photo" src="https://github.com/gufurtado.png" alt="Gustavo">
+          <div class="user-info">
+            <p class="user-name">Gustavo Furtado</p>
+            <p class="user-message-preview">
+              <i class="fas fa-check-double"></i>
+              Eai? quero pagar os 50 reais que te devo
+            </p>
+          </div>
+          <div class="message-info">
+            <div class="message-time">14:27</div>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <img 
+            class="user-photo"
+            src="https://github.com/JFelipeCordeiroAlmeida.png" 
+            alt="José Felipe"
+          >
+          <div class="user-info">
+            <p class="user-name">José Felipe Almeida</p>
+            <p class="user-message-preview">
+              Opa, to querendo pagar o dinheiro da rifa!
+            </p>
+          </div>
+          <div class="message-info">
+            <div class="message-time">16:33</div>
+            <p class="message-pending">2</p>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <img 
+            class="user-photo"
+            src="https://github.com/joaomarcosfurtado.png" 
+            alt="José Felipe"
+          >
+          <div class="user-info">
+            <p class="user-name">Eu</p>
+            <p class="user-message-preview">
+              Testando internet...
+            </p>
+          </div>
+          <div class="message-info">
+            <div class="message-time">21:12</div>
+            <p class="message-pending">3</p>
+          </div>
+        </div>
+
+      </div>
+
+    </aside>
+
+    <main class="chat-container">
+      <nav class="chat-navbar">
+        <div class="contact-info-container">
+          <img 
+            class="user-photo" 
+            src="https://github.com/gufurtado.png" 
+            alt="Gustavo"
+          >
+          <p class="user-name">Gustavo Furtado</p>
+        </div>
+
+        <ul class="chat-tools-container">
+          <li> <i class="fas fa-search"></i> </li>
+          <li> <i class="fas fa-paperclip"></i> </li>
+          <li> <i class="fas fa-ellipsis-v"></i> </li>
+        </ul>
+
+      </nav>
+
+      <div class="messages-container">
+        <div class="background-image"></div>
+        <div class="chat-messages">
+          <div class="chat-messages">
+            <p class="guest-message">
+              Eai? quero pagar os 50 reais que te devo
+            </p>
+            <p class="user-message">Beleza! meu pix é meu CPF pode mandar...</p>
+          </div>
+        </div>
+      </div>
+      <div class="send-message-container">
+        <i class="fas fa-grin"></i>
+        <input 
+          type="text" 
+          name="message" 
+          id="chatmessage" 
+          class="userinput" 
+          placeholder="Type a message"
+        >
+        <i class="fas fa-microphone" ></i>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>
